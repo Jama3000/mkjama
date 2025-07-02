@@ -1,5 +1,4 @@
-
-import { Linkedin, Mail, ExternalLink, Code, Zap, Cog, Users, Award, Calendar } from "lucide-react";
+import { Linkedin, Mail, ExternalLink, Code, Zap, Cog, Users, Award, Calendar, Cpu, CircuitBoard, Microchip } from "lucide-react";
 
 const Index = () => {
   return (
@@ -33,6 +32,20 @@ const Index = () => {
               <span className="text-blue-400"> innovation</span>, and 
               <span className="text-purple-400"> impact</span>.
             </p>
+            <div className="flex justify-center space-x-6 mt-6 text-sm">
+              <span className="flex items-center space-x-2 text-cyan-400">
+                <Cpu size={16} />
+                <span>Embedded Systems</span>
+              </span>
+              <span className="flex items-center space-x-2 text-orange-400">
+                <CircuitBoard size={16} />
+                <span>IoT Systems</span>
+              </span>
+              <span className="flex items-center space-x-2 text-pink-400">
+                <Microchip size={16} />
+                <span>Artificial Intelligence</span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -57,6 +70,13 @@ const Index = () => {
               innovation and business strategy, I work to bridge engineering with entrepreneurship to build scalable, 
               impactful tech.
             </p>
+            <p>
+              I'm passionate about <span className="text-cyan-400 font-semibold">Embedded Systems</span> that power smart devices, 
+              <span className="text-orange-400 font-semibold"> IoT systems</span> that connect our world, and 
+              <span className="text-pink-400 font-semibold"> Artificial Intelligence</span> that drives intelligent automation. 
+              These technologies form the backbone of modern innovation, and I'm excited to explore their potential in creating 
+              sustainable solutions for tomorrow's challenges.
+            </p>
           </div>
         </div>
       </section>
@@ -65,7 +85,7 @@ const Index = () => {
       <section id="skills" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center text-green-400">Skills & Expertise</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Technical Skills */}
             <div className="bg-slate-800/50 p-8 rounded-lg border border-green-500/20 hover:border-green-500/40 transition-all">
               <div className="flex items-center mb-6">
@@ -94,6 +114,32 @@ const Index = () => {
                 <div className="text-sm text-slate-400 mt-4">
                   MATLAB, Simulink, AutoCAD, Fusion360<br />
                   Modbus, Zigbee, I2C, SPI, FTP, SSH protocols
+                </div>
+              </div>
+            </div>
+
+            {/* Passion Areas */}
+            <div className="bg-slate-800/50 p-8 rounded-lg border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+              <div className="flex items-center mb-6">
+                <Cpu className="text-cyan-400 mr-3" size={24} />
+                <h3 className="text-xl font-semibold">Passion Areas</h3>
+              </div>
+              <div className="space-y-4 text-slate-300">
+                <div className="flex items-center space-x-3">
+                  <Cpu className="text-cyan-400" size={16} />
+                  <span>Embedded Systems</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CircuitBoard className="text-orange-400" size={16} />
+                  <span>IoT Systems</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Microchip className="text-pink-400" size={16} />
+                  <span>Artificial Intelligence</span>
+                </div>
+                <div className="text-sm text-slate-400 mt-4">
+                  Microcontrollers, Sensors, Wireless Communication<br />
+                  Machine Learning, Computer Vision, Neural Networks
                 </div>
               </div>
             </div>
